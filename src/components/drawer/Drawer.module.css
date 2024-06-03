@@ -1,6 +1,6 @@
 .container {
     background-color: #12171B;
-    height: 100vh;
+    min-height: 100vh;
     color: white;
     width: 264px;
     display: flex;
@@ -9,6 +9,7 @@
     position: fixed;
     top: 0; 
     left: 0; 
+    font-size: 14px;
 }
 .link {
     color: #ffffff;

@@ -97,7 +97,7 @@ const Drawer = () => {
             {/* <DrawerSearch /> */}
             <img src={Search} />
             
-            <div style={{ marginTop: 25 }}>
+            <div style={{ marginTop: 15 }}>
                 {
                     linkts.slice(0, 3).map(({ to, icon, title }) => {
                         return (
@@ -110,7 +110,7 @@ const Drawer = () => {
                         )
                     })
                 }
-                <Divider />
+                <Divider style={{marginTop: 0, marginBottom: 15}} />
                 {
                     linkts.slice(3, 6).map(({ to, icon, title }) => {
                         return (
@@ -125,10 +125,10 @@ const Drawer = () => {
                 }
             </div>
             <div className={styles.separator} />
-            <Button style={{ backgroundColor: colors.bg2 }} type="primary" shape="round" size='large'>
+            <Button style={{ backgroundColor: colors.bg2, marginBottom: 'auto' }} type="primary" shape="round" size='large'>
                 Custom test
             </Button>
-            <div style={{ marginTop: 25 }}>
+            <div style={{ marginTop: 15 }}>
                 <div style={{ color: colors.gray }}>FAVORITES</div>
                 <div style={{ padding: 4 }}>
                     <div style={{ background: colors.dark, padding: 18 }}>
@@ -138,7 +138,7 @@ const Drawer = () => {
                     </div>
                 </div>
             </div>
-            <div style={{ marginTop: 10 }}>
+            <div style={{ marginTop: 10, marginBottom: 20 }}>
                 {
                     linkts.slice(6, 8).map(({ to, icon, title }) => {
                         return (
